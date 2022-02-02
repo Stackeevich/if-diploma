@@ -1,0 +1,77 @@
+@import "../../index";
+
+.footer{
+  margin-top: 65px;
+  background-color: $secondary-blue;
+}
+.footer-body{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.footer-content{
+  display: flex;
+  width: 100%;
+}
+.footer-list{
+  margin-right: 24px;
+  h3{
+    font-size: 18px;
+    line-height: 25px;
+    @extend %fw700n;
+    margin-bottom: 20px;
+  }
+  li{
+    margin-bottom: 8px;
+    a{
+      font-size: 16px;
+      line-height: 22px;
+      color: $black;
+      &:hover{
+        @extend %linkHov
+      };
+      &:active{
+        @extend %linkAct
+      }
+    }
+  }
+  &:nth-child(1){
+    width: 12em;
+    flex: none;
+  };
+  &:nth-child(2){
+    width: 12em;
+  }
+  &:nth-child(3){
+    flex: 2;
+  }
+  &:nth-child(4){
+    flex: 2;
+  }
+}
+.footer-media-links{
+  a {
+    margin-right: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-body{
+    flex-direction: column;
+    align-items: center
+  }
+  .footer-list{
+    margin-right: 12px;
+    &:nth-child(1){
+      width: 8em;
+    };
+    &:nth-child(2){
+      width: 8em;
+    }
+    &:nth-child(3){
+      width: 8em;
+    }
+  }
+  .footer-media.footer-list{
+    width: 12em;
+  }
+}

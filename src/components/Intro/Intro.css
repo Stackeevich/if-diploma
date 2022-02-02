@@ -1,0 +1,124 @@
+.intro-button, .intro-description {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.intro-header {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.intro-button, .intro-body {
+  border-radius: 8px;
+}
+
+:root {
+  --col-width: 8.33%;
+}
+
+.col-1 {
+  width: var(--col-width);
+}
+
+.col-1-5 {
+  width: calc(var(--col-width) * 1.5);
+}
+
+.col-2 {
+  width: calc(var(--col-width) * 2);
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: calc(var(--col-width) * 4);
+}
+
+.col-5 {
+  width: calc(var(--col-width) * 5);
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.intro {
+  position: relative;
+  padding: 30px 0;
+}
+
+.intro-body {
+  background-color: #d3ebf9;
+  width: 100%;
+  max-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 68px 80px;
+  color: #000000;
+}
+
+.intro-content {
+  margin-right: 88px;
+  margin-top: 32px;
+  max-width: 315px;
+}
+
+.intro-header {
+  font-size: 38px;
+  line-height: 52px;
+  margin-bottom: 40px;
+}
+
+.intro-description {
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 40px;
+}
+
+.intro-button {
+  width: 185px;
+  height: 48px;
+  background-color: #ff5d4f;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 27px;
+}
+.intro-button:hover {
+  -webkit-filter: drop-shadow(2px 2px 5px #777);
+          filter: drop-shadow(2px 2px 5px #777);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.intro-button:active {
+  -webkit-filter: drop-shadow(5px 5px 10px #555);
+          filter: drop-shadow(5px 5px 10px #555);
+}
+
+.intro-image img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 1230px) {
+  .intro-body {
+    padding: calc(10px + 58 * ((100vw - 320px) / (1230 - 320))) calc(16px + 64 * ((100vw - 320px) / (1230 - 320)));
+  }
+
+  .intro-content {
+    margin-right: calc(40px + 44 * ((100vw - 320px) / (1230 - 320)));
+  }
+
+  .intro-header {
+    font-size: calc(20px + 18 * (100vw / 1230));
+    margin-bottom: calc(10px + 30 * ((100vw - 320px) / (1230 - 320)));
+  }
+
+  .intro-description {
+    font-size: calc(10px + 18 * (100vw / 1230));
+    margin-bottom: calc(10px + 30 * ((100vw - 320px) / (1230 - 320)));
+  }
+}

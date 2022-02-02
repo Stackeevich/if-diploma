@@ -1,0 +1,225 @@
+.all-books-btn button, .card-order {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.card-content h2, .all-books-header {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.all-books-btn button, .card-order {
+  border-radius: 8px;
+}
+
+.card-order:hover {
+  -webkit-box-shadow: inset 0 0 0 3px #616161;
+          box-shadow: inset 0 0 0 3px #616161;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card-order:active {
+  background-color: #616161;
+}
+
+:root {
+  --col-width: 8.33%;
+}
+
+.col-1 {
+  width: var(--col-width);
+}
+
+.col-1-5 {
+  width: calc(var(--col-width) * 1.5);
+}
+
+.col-2 {
+  width: calc(var(--col-width) * 2);
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: calc(var(--col-width) * 4);
+}
+
+.col-5 {
+  width: calc(var(--col-width) * 5);
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.all-books {
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 8px;
+  padding: 26px 32px;
+  position: relative;
+}
+
+.all-books-header {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.block-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: calc(25% - 30px) 44px calc(25% - 30px) 44px calc(25% - 30px) 44px calc(25% - 30px);
+  grid-template-columns: calc(25% - 30px) calc(25% - 30px) calc(25% - 30px) calc(25% - 30px);
+  grid-gap: 48px 44px;
+  min-height: 185px;
+  margin-bottom: 35px;
+}
+@media (max-width: 1000px) {
+  .block-grid {
+    -ms-grid-columns: calc(33.3% - 30px) 34px calc(33.3% - 30px) 34px calc(33.3% - 30px);
+    grid-template-columns: calc(33.3% - 30px) calc(33.3% - 30px) calc(33.3% - 30px);
+    grid-gap: 38px 34px;
+  }
+}
+@media (max-width: 768px) {
+  .block-grid {
+    -ms-grid-columns: calc(50% - 30px) 34px calc(50% - 30px);
+    grid-template-columns: calc(50% - 30px) calc(50% - 30px);
+    grid-gap: 38px 34px;
+  }
+}
+@media (max-width: 560px) {
+  .block-grid {
+    -ms-grid-columns: calc(100% - 0px);
+    grid-template-columns: calc(100% - 0px);
+    grid-gap: 38px;
+  }
+}
+
+.card {
+  border-radius: 8px;
+  max-width: 100%;
+  min-height: 185px;
+}
+@media (max-width: 560px) {
+  .card {
+    min-height: 210px;
+  }
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.card-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  position: relative;
+  margin-right: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.card-content h2 {
+  font-size: 14px;
+  line-height: 19px;
+}
+.card-content h3 {
+  font-size: 12px;
+  line-height: 16px;
+  color: #616161;
+}
+.card-content h3:before {
+  content: "by ";
+}
+
+.card-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px;
+}
+.card-stars li {
+  width: 19px;
+  height: 19px;
+  padding: 2px;
+}
+.card-stars li svg {
+  width: 100%;
+  height: 100%;
+}
+
+.card-order {
+  width: 100%;
+  height: 32px;
+  background-color: #b5b5b5;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+}
+.all-books-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.all-books-btn button {
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  background-color: #ff5d4f;
+  padding: 10px 38px;
+}
+.all-books-btn button:hover {
+  -webkit-filter: drop-shadow(2px 2px 5px #777);
+          filter: drop-shadow(2px 2px 5px #777);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.all-books-btn button:active {
+  -webkit-filter: drop-shadow(5px 5px 10px #555);
+          filter: drop-shadow(5px 5px 10px #555);
+}

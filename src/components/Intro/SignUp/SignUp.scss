@@ -1,0 +1,97 @@
+@import "../../../index";
+
+.modal__wrapper{
+  width: 100%;
+  height: 100vh;
+}
+.settings{
+  display: flex;
+  position: absolute;
+  top: 180px;
+  left: 34%;
+  z-index: 7;
+  background-color: $white;
+  width: 395px;
+  border-radius: 8px;
+  padding: 40px 32px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  button{
+    @extend %br8;
+  }
+}
+.settings-header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  h2{
+    font-size: 20px;
+    line-height: 27px;
+    @extend %fw700n
+  }
+}
+.settings-form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  input{
+    width: 320px;
+    height: 44px;
+    border: 1px solid $secondary-gray;
+    @extend %br8;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0 16px;
+  }
+  label{
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 3px;
+  }
+  span{
+    color: $general-red;
+    font-weight: 600;
+  }
+  .user-info__item{
+    margin-bottom: 16px;
+  }
+}
+.sign-in-btn{
+  background-color: $general-red;
+  font-size: 16px;
+  line-height: 22px;
+  @extend %fw600n;
+  color: $white;
+  padding: 5px 43px;
+  &:hover{
+    @extend %redBtnHov;
+  };
+  &:active{
+      @extend %redBtnAct;
+    };
+}
+.save-settings-btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.close-btn{
+  background-color: transparent;
+}
+.overlay {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background-color: rgba(102, 102, 102, 0.5);
+  z-index:1;
+}

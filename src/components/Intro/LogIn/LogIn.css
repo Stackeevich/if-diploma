@@ -1,0 +1,173 @@
+.sign-in-btn {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.settings-header h2 {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.settings-form input, .settings button {
+  border-radius: 8px;
+}
+
+.sign-in-btn:hover {
+  -webkit-filter: drop-shadow(2px 2px 5px #777);
+          filter: drop-shadow(2px 2px 5px #777);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sign-in-btn:active {
+  -webkit-filter: drop-shadow(5px 5px 10px #555);
+          filter: drop-shadow(5px 5px 10px #555);
+}
+
+:root {
+  --col-width: 8.33%;
+}
+
+.col-1 {
+  width: var(--col-width);
+}
+
+.col-1-5 {
+  width: calc(var(--col-width) * 1.5);
+}
+
+.col-2 {
+  width: calc(var(--col-width) * 2);
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: calc(var(--col-width) * 4);
+}
+
+.col-5 {
+  width: calc(var(--col-width) * 5);
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.modal__wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 180px;
+  left: 34%;
+  z-index: 7;
+  background-color: #ffffff;
+  width: 395px;
+  border-radius: 8px;
+  padding: 40px 32px;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.settings-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+.settings-header h2 {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.settings-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.settings-form input {
+  width: 320px;
+  height: 44px;
+  border: 1px solid #b5b5b5;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 0 16px;
+}
+.settings-form label {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 3px;
+}
+.settings-form span {
+  color: #ff5d4f;
+  font-weight: 600;
+}
+.settings-form .user-info__item {
+  margin-bottom: 16px;
+}
+
+.sign-in-btn {
+  background-color: #ff5d4f;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  padding: 5px 43px;
+}
+.save-settings-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.close-btn {
+  background-color: transparent;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(102, 102, 102, 0.5);
+  z-index: 1;
+}

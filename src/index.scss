@@ -1,0 +1,65 @@
+$general-red: #ff5d4f;
+$black: #000000;
+$white: #ffffff;
+$gray: #616161;
+$secondary-gray: #b5b5b5;
+$general-blue: #85c8ee;
+$secondary-blue: #d3ebf9;
+
+%fw600n{
+  font-weight: 600;
+  font-style: normal;
+}
+%fw700n{
+  font-weight: 700;
+  font-style: normal;
+}
+%br8{
+  border-radius: 8px;
+}
+%btnCardHov{
+  box-shadow: inset 0 0 0 3px $gray;
+  transition: .3s;
+}
+%btnCardAct{
+  background-color: $gray;
+}
+%linkHov{
+  color: $general-red;
+  transition: .3s;
+}
+%linkAct{
+  color: $general-red;
+}
+%redBtnHov{
+  filter: drop-shadow(2px 2px 5px #777);
+  transition: .3s;
+}
+%redBtnAct{
+  filter: drop-shadow(5px 5px 10px #555);
+}
+
+:root{
+  --col-width: 8.33%;
+}
+.col-1{
+  width: var(--col-width);
+}
+.col-1-5{
+  width: calc(var(--col-width) * 1.5);
+}
+.col-2{
+  width: calc(var(--col-width) * 2);
+}
+.col-3{
+  width: 25%;
+}
+.col-4{
+  width: calc(var(--col-width) * 4);
+}
+.col-5{
+  width: calc(var(--col-width) * 5);
+}
+.col-6{
+  width: 50%;
+}

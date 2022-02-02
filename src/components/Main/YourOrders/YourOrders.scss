@@ -1,0 +1,239 @@
+@import "../../../index";
+
+.waiting-for{
+  background-color: $white;
+  width: 100%;
+  min-height: 400px;
+  @extend %br8;
+  margin: 36px 0;
+  padding: 26px 32px;
+  position: relative;
+}
+.waiting-for_header{
+  @extend %fw700n;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.swiper-container{
+  overflow: hidden;
+}
+.swiper-wrapper{
+  display: flex;
+}
+.swiper-slide{
+  border-radius: 8px;
+  min-height: 308px;
+}
+.waiting-for__card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  max-width: 122px;
+  height: 100%;
+}
+.waiting-for_card-image{
+  width: 122px;
+  min-height: 185px;
+  float: left;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  img{
+    width: auto;
+    height: 100%;
+  }
+}
+
+.waiting-for_card-text{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  h2{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  h3{
+    font-size: 12px;
+    line-height: 16px;
+    color: $gray;
+    &:before{
+      content: 'by ';
+    }
+  }
+}
+.waiting-for_card-description{
+  height: 100%;
+  margin-bottom: 8px;
+  p{
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+  }
+}
+.waiting-for_card-stars{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  li{
+    width: 19px;
+    height: 19px;
+    padding: 2px;
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.waiting-for_card-button{
+  width: 100%;
+  height: 32px;
+  background-color: $secondary-gray;
+  color: $white;
+  font-size: 12px;
+  line-height: 16px;
+  @extend %fw600n;
+  @extend %br8;
+  &:hover{
+    @extend %btnCardHov
+  };
+  &:active{
+    @extend %btnCardAct
+  }
+}
+.list-of-books{
+  background-color: $white;
+  width: 100%;
+  min-height: 400px;
+  @extend %br8;
+  margin: 36px 0;
+  padding: 26px 32px;
+  position: relative;
+}
+.main-body_alert{
+  position: absolute;
+  top: 45%;
+  left: 0;
+  @extend %fw600n;
+  font-size: 24px;
+  line-height: 40px;
+  color: $secondary-gray;
+  width: 100%;
+  padding: 0 20px;
+  p{
+    text-align: center;
+  }
+}
+
+//      your order    
+
+.your-orders{
+  background-color: $white;
+  width: 100%;
+  min-height: 400px;
+  @extend %br8;
+  margin: 36px 0;
+  padding: 26px 76px 26px 32px;
+  position: relative;
+}
+.order-body{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.order-image{
+  margin-right: 32px;
+  flex: 0 0 27%;
+  img{
+    width: 100%;
+  }
+}
+.order-stars{
+  margin-bottom: 24px;
+  svg{
+    margin-right: 8.82px;
+  }
+}
+.order-title{
+  margin-bottom: 12px;
+  h2{
+    font-size: 40px;
+    line-height: 54px;
+    color: $black;
+    @extend %fw700n;
+  }
+}
+.order-author{
+  margin-bottom: 24px;
+  h3{
+    font-size: 24px;
+    line-height: 33px;
+    color: $general-red;
+    @extend %fw600n;
+  }
+}
+.order-pages{
+  margin-bottom: 9.75px;
+  p{
+    font-size: 18px;
+    line-height: 25px;
+    color: $gray;
+  }
+}
+.order-button{
+  margin-bottom: 58.78px;
+  font-size: 20px;
+  line-height: 27px;
+  color: $white;
+  @extend %br8;
+  @extend %fw600n;
+  background-color: $general-red;
+  width: 185px;
+  height: 45.48px;
+  &:hover{
+    filter: drop-shadow(2px 2px 5px #777);
+    transition: .3s;
+  }
+  &:active{
+    filter: drop-shadow(5px 5px 10px #555);
+  }
+}
+.order-about-header{
+  margin-bottom: 16px;
+  h3{
+    font-size: 28px;
+    line-height: 38px;
+    @extend %fw700n;
+    color: $black;
+  }
+}
+.order-about-text{
+  margin-bottom: 16px;
+  p{
+    font-size: 16px;
+    line-height: 22px;
+    color: $black;
+    margin-bottom: 14px;
+  }
+}
+.order-about-button{
+  width: 122px;
+  height: 32px;
+  background-color: $secondary-gray;
+  color: $white;
+  font-size: 12px;
+  line-height: 16px;
+  @extend %fw600n;
+  @extend %br8;
+  &:hover{
+    @extend %btnCardHov
+  };
+  &:active{
+    @extend %btnCardAct
+  }
+}
+

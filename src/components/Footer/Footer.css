@@ -1,0 +1,137 @@
+.footer-list h3 {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.footer-list li a:hover {
+  color: #ff5d4f;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer-list li a:active {
+  color: #ff5d4f;
+}
+
+:root {
+  --col-width: 8.33%;
+}
+
+.col-1 {
+  width: var(--col-width);
+}
+
+.col-1-5 {
+  width: calc(var(--col-width) * 1.5);
+}
+
+.col-2 {
+  width: calc(var(--col-width) * 2);
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: calc(var(--col-width) * 4);
+}
+
+.col-5 {
+  width: calc(var(--col-width) * 5);
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.footer {
+  margin-top: 54px;
+  background-color: #d3ebf9;
+}
+
+.footer-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.footer-list {
+  margin-right: 24px;
+}
+.footer-list h3 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.footer-list li {
+  margin-bottom: 8px;
+}
+.footer-list li a {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+.footer-list:nth-child(1) {
+  width: 12em;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.footer-list:nth-child(2) {
+  width: 12em;
+}
+.footer-list:nth-child(3) {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.footer-list:nth-child(4) {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.footer-media-links a {
+  margin-right: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer-list {
+    margin-right: 12px;
+  }
+  .footer-list:nth-child(1) {
+    width: 8em;
+  }
+  .footer-list:nth-child(2) {
+    width: 8em;
+  }
+  .footer-list:nth-child(3) {
+    width: 8em;
+  }
+
+  .footer-media.footer-list {
+    width: 12em;
+  }
+}
