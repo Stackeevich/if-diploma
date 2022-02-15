@@ -1,14 +1,14 @@
-.intro-button, .intro-description {
+.headInfoBlock-button, .headInfoBlock-description {
   font-weight: 600;
   font-style: normal;
 }
 
-.intro-header {
+.headInfoBlock-header {
   font-weight: 700;
   font-style: normal;
 }
 
-.intro-button, .intro-body {
+.headInfoBlock-button, .headInfoBlock-body {
   border-radius: 8px;
 }
 
@@ -44,12 +44,12 @@
   width: 50%;
 }
 
-.intro {
+.headInfoBlock {
   position: relative;
   padding: 30px 0;
 }
 
-.intro-body {
+.headInfoBlock-body {
   background-color: #d3ebf9;
   width: 100%;
   max-height: 500px;
@@ -60,25 +60,25 @@
   color: #000000;
 }
 
-.intro-content {
+.headInfoBlock-content {
   margin-right: 88px;
   margin-top: 32px;
   max-width: 315px;
 }
 
-.intro-header {
+.headInfoBlock-header {
   font-size: 38px;
   line-height: 52px;
   margin-bottom: 40px;
 }
 
-.intro-description {
+.headInfoBlock-description {
   font-size: 28px;
   line-height: 38px;
   margin-bottom: 40px;
 }
 
-.intro-button {
+.headInfoBlock-button {
   width: 185px;
   height: 48px;
   background-color: #ff5d4f;
@@ -86,38 +86,38 @@
   font-size: 20px;
   line-height: 27px;
 }
-.intro-button:hover {
+.headInfoBlock-button:hover {
   -webkit-filter: drop-shadow(2px 2px 5px #777);
           filter: drop-shadow(2px 2px 5px #777);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.intro-button:active {
+.headInfoBlock-button:active {
   -webkit-filter: drop-shadow(5px 5px 10px #555);
           filter: drop-shadow(5px 5px 10px #555);
 }
 
-.intro-image img {
+.headInfoBlock-image img {
   max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 @media (max-width: 1230px) {
-  .intro-body {
+  .headInfoBlock-body {
     padding: calc(10px + 58 * ((100vw - 320px) / (1230 - 320))) calc(16px + 64 * ((100vw - 320px) / (1230 - 320)));
   }
 
-  .intro-content {
+  .headInfoBlock-content {
     margin-right: calc(40px + 44 * ((100vw - 320px) / (1230 - 320)));
   }
 
-  .intro-header {
+  .headInfoBlock-header {
     font-size: calc(20px + 18 * (100vw / 1230));
     margin-bottom: calc(10px + 30 * ((100vw - 320px) / (1230 - 320)));
   }
 
-  .intro-description {
+  .headInfoBlock-description {
     font-size: calc(10px + 18 * (100vw / 1230));
     margin-bottom: calc(10px + 30 * ((100vw - 320px) / (1230 - 320)));
   }

@@ -4,7 +4,7 @@ import './Footer.scss';
 const Footer = () => {
 
   return (
-    <footer className="footer">
+    <footer className="footer footer-books">
       <div className="container">
         <div className="footer-body">
           <div className="footer-content">
@@ -48,7 +48,7 @@ const Footer = () => {
           <div className="footer-media footer-list">
             <h3 className="footer-media-header">Stay connected</h3>
             <div className="footer-media-links">
-              <a href="/">
+              <a href="https://www.instagram.com/vlad_stackeevich/">
                 <svg
                   width="26"
                   height="26"

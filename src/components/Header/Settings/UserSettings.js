@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
 const UserSettings = ({ openedSettings }) => {
   const dispatch = useDispatch();
@@ -19,7 +20,9 @@ const UserSettings = ({ openedSettings }) => {
         Settings
       </button>
       <button className="my-orders-btn" type="button">
-        My orders
+        <NavLink to="/main/yourOrders">
+          My orders
+         </NavLink>
       </button>
       <button onClick={logOut} className="log-out-btn" type="button">
         Log out

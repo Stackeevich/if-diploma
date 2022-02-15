@@ -59,7 +59,7 @@
   background-color: #ffffff;
   width: 100%;
   border-radius: 8px;
-  padding: 26px 32px;
+  padding: 120px 32px;
   position: relative;
 }
 
@@ -78,6 +78,7 @@
   min-height: 185px;
   margin-bottom: 35px;
 }
+
 @media (max-width: 1000px) {
   .block-grid {
     -ms-grid-columns: calc(33.3% - 30px) 34px calc(33.3% - 30px) 34px calc(33.3% - 30px);

@@ -1,10 +1,10 @@
 @import "../../index";
 
-.intro{
+.headInfoBlock{
   position: relative;
   padding: 30px 0;
 }
-.intro-body{
+.headInfoBlock-body{
   background-color: $secondary-blue;
   width: 100%;
   max-height: 500px;
@@ -13,24 +13,24 @@
   padding: 68px 80px;
   color: $black;
 }
-.intro-content{
+.headInfoBlock-content{
   margin-right: 88px;
   margin-top: 32px;
   max-width: 315px;
 }
-.intro-header{
+.headInfoBlock-header{
   @extend %fw700n;
   font-size: 38px;
   line-height: 52px;
   margin-bottom: 40px;
 }
-.intro-description{
+.headInfoBlock-description{
   @extend %fw600n;
   font-size: 28px;
   line-height: 38px;
   margin-bottom: 40px;
 }
-.intro-button{
+.headInfoBlock-button{
   width: 185px;
   height: 48px;
   background-color: $general-red;
@@ -47,7 +47,7 @@
     filter: drop-shadow(5px 5px 10px #555);
   }
 }
-.intro-image{
+.headInfoBlock-image{
   img{
     max-width: 100%;
     object-fit: contain;
@@ -55,17 +55,17 @@
 }
 
 @media (max-width: 1230px) {
-  .intro-body{
+  .headInfoBlock-body{
     padding: calc(10px + 58 * ((100vw - 320px) / (1230 - 320))) calc(16px + 64 * ((100vw - 320px) / (1230 - 320)));
   }
-  .intro-content {
+  .headInfoBlock-content {
     margin-right: calc(40px + 44 * ((100vw - 320px) / (1230 - 320)));
   }
-  .intro-header{
+  .headInfoBlock-header{
     font-size: calc(20px + 18 * (100vw / 1230));
     margin-bottom: calc(10px + 30 * ((100vw - 320px) / (1230 - 320)));
   }
-  .intro-description{
+  .headInfoBlock-description{
     font-size: calc(10px + 18 * (100vw / 1230));
     margin-bottom: calc(10px + 30 * ((100vw - 320px) / (1230 - 320)));
   }

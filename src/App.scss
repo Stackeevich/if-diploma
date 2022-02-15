@@ -12,10 +12,12 @@ ul, li{
   list-style: none
 }
 a, a:visited{
-  text-decoration: none
+  text-decoration: none;
+  color: #616161;
 }
 a:hover{
-  text-decoration: none
+  text-decoration: none;
+  color: #ff5d4f;
 }
 a:focus, a:active{
   outline: none;
